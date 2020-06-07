@@ -1,1 +1,3 @@
-# machine-learning-MATLAB
+# Machine Learning (MATLAB)
+
+## Linear Regression 
