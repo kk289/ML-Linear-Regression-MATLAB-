@@ -146,6 +146,7 @@ end
 ```
 
 ![covergence](Figure/covergance.jpg)
+
 Figure: Convergence of gradient descent with an appropriate learning rate
 
 
