@@ -12,7 +12,7 @@ figure; % open a new figure window
 %               as the x and y arguments of this function.
 
 plot(x,y,'rx', 'MarkerSize', 10);
-xlabel("population");
-ylabel("revenue");
+xlabel("population of City in 10,000s");
+ylabel("Profit in $10,000");
 
 end

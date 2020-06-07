@@ -9,7 +9,7 @@ Machine Learning course from Stanford on Coursera.
 - MATLAB 2018 b
 
 ### ==================== Part 1: Basic Function ====================
-### warmUpExercise.m
+### warmUpExercise.m : Simple example function in MATLAB
 
 ```
 function A = warmUpExercise()
@@ -21,19 +21,26 @@ end
 ```
 
 ### ======================= Part 2: Plotting =======================
-### plotData.m
+### plotData.m : Function to display the dataset
 
 ```
-
+function plotData(x, y)
+figure;
+plot(x,y,'rx', 'MarkerSize', 10);
+xlabel("population of City in 10,000s");
+ylabel("Profit in $10,000");
+end
 ```
+
+[!plot](/Figure/datavisualize.fig)
 
 ### =================== Part 3: Cost and Gradient descent ===================
-### computeCost.m
+### computeCost.m : Function to compute the cost of linear regression
 ```
 
 ```
 
-### gradientDescent.m
+### gradientDescent.m : Function to run gradient descent
 ```
 
 ```
