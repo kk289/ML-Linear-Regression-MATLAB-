@@ -20,7 +20,7 @@ A = eye(5);
 end
 ```
 
-### ======================= Part 2: Plotting =======================
+### ===================== Part 2: Plotting =======================
 ### plotData.m : Function to display the dataset
 
 ```
@@ -35,9 +35,24 @@ end
 ![plot](Figure/datavisualize.jpg)
 
 ### =================== Part 3: Cost and Gradient descent ===================
+In this part, we will fit the linear regression parameters θ to our dataset using gradient descent.
+
+![costfunction](Figure/costfunction.png)
+
 ### computeCost.m : Function to compute the cost of linear regression
 ```
+function J = computeCost(X, y, theta)
 
+# Initialize some useful values
+m = length(y); # number of training examples
+
+# You need to return the following variables correctly 
+J = 0;
+
+# Compute the cost of a particular choice of theta. You should set J to the cost.
+h = X * theta
+J = (1/(2 * m)) * sum((h-y).^2)
+end
 ```
 
 ### gradientDescent.m : Function to run gradient descent
@@ -45,7 +60,7 @@ end
 
 ```
 
-### ============= Part 4: Visualizing J(theta_0, theta_1) =============
+### ================ Part 4: Visualizing J(theta_0, theta_1) ================
 ###
 
 ```
