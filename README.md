@@ -79,7 +79,8 @@ end
 
 ### Result
 Training data with Linear Regression Fit
-![linearregression](trainingdata.jpg)
+
+![linearregression](Figure/trainingdata.jpg)
 
 ## Course Links
 
