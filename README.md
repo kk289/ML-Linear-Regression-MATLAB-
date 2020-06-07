@@ -1,6 +1,12 @@
 # Machine Learning (MATLAB)
 
+Machine Learning course from Stanford on Coursera.
+
 ## Linear Regression 
+
+### Environment
+- macOS Catalina (version 10.15.3)
+- MATLAB 2018 b
 
 ### ==================== Part 1: Basic Function ====================
 ### warmUpExercise.m
