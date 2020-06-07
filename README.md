@@ -145,9 +145,8 @@ end
 end
 ```
 
-Figure: Convergence of gradient descent with an appropriate learning rate
-
 ![covergence](Figure/covergance.jpg)
+Figure: Convergence of gradient descent with an appropriate learning rate
 
 
 ### =================== Part 6: Normal Equations ===================
