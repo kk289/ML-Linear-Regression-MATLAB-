@@ -2,6 +2,7 @@
 
 ## Linear Regression 
 
+### ==================== Part 1: Basic Function ====================
 ### warmUpExercise.m
 
 ```
