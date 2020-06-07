@@ -75,12 +75,18 @@ end
 ```
 
 ![gradient](Figure/surface.jpg)
+
+Figure: Surface
+
 ![surface](Figure/contour.jpg)
 
+Figure: Contour, showing minimum
+
 ### Result
-Training data with Linear Regression Fit
 
 ![linearregression](Figure/trainingdata.jpg)
+
+Figure: Training data with Linear Regression Fit
 
 ## Multiple Linear Regression
 
