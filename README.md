@@ -32,7 +32,7 @@ ylabel("Profit in $10,000");
 end
 ```
 
-[!plot](/Figure/datavisualize.fig)
+[!plot](Figure/datavisualize.jpg)
 
 ### =================== Part 3: Cost and Gradient descent ===================
 ### computeCost.m : Function to compute the cost of linear regression
