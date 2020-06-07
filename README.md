@@ -13,3 +13,28 @@ A = [ ];
 A = eye(5);
 end
 ```
+
+### ======================= Part 2: Plotting =======================
+### plotData.m
+
+```
+
+```
+
+### =================== Part 3: Cost and Gradient descent ===================
+### computeCost.m
+```
+
+```
+
+### gradientDescent.m
+```
+
+```
+
+### ============= Part 4: Visualizing J(theta_0, theta_1) =============
+###
+
+```
+
+```
