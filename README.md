@@ -146,12 +146,14 @@ end
 ```
 
 Figure: Convergence of gradient descent with an appropriate learning rate
-![convergence](Figure/convergence.jpg)
+
+![convergence](Figure/covergence.jpg)
 
 
 ### =================== Part 6: Normal Equations ===================
 
 The closed-form solution to linear regression:
+
 ![normalEqn](Figure/normalEqn.png)
 
 ### normalEqn.m : Computes the closed-form solution to linear regression 
