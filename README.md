@@ -33,6 +33,7 @@ end
 ```
 
 ![plot](Figure/datavisualize.jpg)
+- Figure: Scatterplot of training data
 
 ### =================== Part 3: Cost and Gradient descent ===================
 In this part, we will fit the linear regression parameters θ to our dataset using gradient descent.
@@ -75,18 +76,15 @@ end
 ```
 
 ![gradient](Figure/surface.jpg)
-
-Figure: Surface
+- Figure: Surface
 
 ![surface](Figure/contour.jpg)
-
-Figure: Contour, showing minimum
+- Figure: Contour, showing minimum
 
 ### Result
 
 ![linearregression](Figure/trainingdata.jpg)
-
-Figure: Training data with Linear Regression Fit
+- Figure: Training data with Linear Regression Fit
 
 ## Multiple Linear Regression
 
@@ -152,8 +150,7 @@ end
 ```
 
 ![covergence](Figure/covergance.jpg)
-
-Figure: Convergence of gradient descent with an appropriate learning rate
+- Figure: Convergence of gradient descent with an appropriate learning rate
 
 
 ### =================== Part 6: Normal Equations ===================
