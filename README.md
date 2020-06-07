@@ -1,6 +1,6 @@
 # Machine Learning (MATLAB)
 
-Machine Learning course from Stanford on Coursera.
+Machine Learning course from Stanford University on Coursera.
 
 ## Linear Regression 
 
@@ -50,24 +50,36 @@ m = length(y); # number of training examples
 J = 0;
 
 # Compute the cost of a particular choice of theta. You should set J to the cost.
-h = X * theta
-J = (1/(2 * m)) * sum((h-y).^2)
+h = X * theta;
+J = (1/(2 * m)) * sum((h-y).^2);
 end
 ```
 
 ### gradientDescent.m : Function to run gradient descent
 ```
+function [theta, J_history] = gradientDescent(X, y, theta, alpha, num_iters)
 
+# Initialize some useful values
+m = length(y); # number of training examples
+J_history = zeros(num_iters, 1);
+
+for iter = 1:num_iters
+    
+    h = X * theta;
+    theta = theta - (alpha/m) * (X' * (h-y));
+    
+    % Save the cost J in every iteration    
+    J_history(iter) = computeCost(X, y, theta);
+end
+end
 ```
 
-### ================ Part 4: Visualizing J(theta_0, theta_1) ================
-###
+![gradient](Figure/surface.jpg)
+![surface](Figure/contour.jpg)
 
-```
-
-```
-
-
+### Result
+Training data with Linear Regression Fit
+![linearregression](trainingdata.jpg)
 
 ## Course Links
 
