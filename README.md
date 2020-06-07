@@ -2,11 +2,11 @@
 
 Machine Learning course from Stanford University on Coursera.
 
-## Linear Regression 
-
 ### Environment
 - macOS Catalina (version 10.15.3)
 - MATLAB 2018 b
+
+## Linear Regression 
 
 ### ==================== Part 1: Basic Function ====================
 ### warmUpExercise.m : Simple example function in MATLAB
@@ -81,6 +81,91 @@ end
 Training data with Linear Regression Fit
 
 ![linearregression](Figure/trainingdata.jpg)
+
+## Multiple Linear Regression
+
+In this part, we will implement linear regression with multiple variables to predict the prices of houses. Suppose we are selling our house and we want to know what a good market price would be. One way to do this is to first collect information on recent houses sold and make a model of housing prices.
+
+The file 'ex1data2.txt' contains a training set of housing prices in Portland, Oregon. The first column is the size of the house (in square feet), the second column is the number of bedrooms, and the third column is the price of the house.
+
+### =================== Part 4: Feature Normalization ===================
+### featureNormalize.m
+
+```
+function [X_norm, mu, sigma] = featureNormalize(X)
+
+# Need to set these values correctly
+X_norm = X;
+mu = zeros(1, size(X, 2));
+sigma = zeros(1, size(X, 2));
+
+mu = mean(X);
+sigma = std(X);
+X_norm = (X - mu)./sigma;
+end
+```
+
+### ======= Part 5: Cost and Gradient descent with multiple variable ============
+
+### computeCostMutli.m : Compute cost for linear regression with multiple variables
+
+```
+function J = computeCostMulti(X, y, theta)
+
+% Initialize some useful values
+m = length(y); % number of training examples
+
+J = 0;
+# Compute the cost of a particular choice of theta
+h = X * theta;
+J = (1/(2 * m)) * (sum((h-y).^2));
+
+end
+```
+
+### gradientDescentMulti.m : Performs gradient descent to learn theta
+
+```
+function [theta, J_history] = gradientDescentMulti(X, y, theta, alpha, num_iters)
+
+% Initialize some useful values
+m = length(y); % number of training examples
+J_history = zeros(num_iters, 1);
+
+for iter = 1:num_iters
+
+    h = X * theta;
+    error = (h - y);
+    theta = theta - ((alpha/m) * X' * error);
+    
+    # Save the cost J in every iteration    
+    J_history(iter) = computeCostMulti(X, y, theta);
+
+end
+end
+```
+
+Figure: Convergence of gradient descent with an appropriate learning rate
+![convergence](Figure/convergence.jpg)
+
+
+### =================== Part 6: Normal Equations ===================
+
+The closed-form solution to linear regression:
+![normalEqn](Figure/normalEqn.png)
+
+### normalEqn.m : Computes the closed-form solution to linear regression 
+```
+function [theta] = normalEqn(X, y)
+
+theta = zeros(size(X, 2), 1);
+
+# to compute the closed form solution to linear regression and put the result in theta
+
+theta = pinv((X') * X) * ((X') * y);
+
+end
+```
 
 ## Course Links
 
