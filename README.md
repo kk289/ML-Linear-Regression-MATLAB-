@@ -6,6 +6,10 @@ Machine Learning course from Stanford University on Coursera.
 - macOS Catalina (version 10.15.3)
 - MATLAB 2018 b
 
+### Dataset
+- ex1data1.txt (one feature)
+- ex1data2.txt (two features)
+
 ## Linear Regression 
 
 ### ==================== Part 1: Basic Function ====================
